@@ -283,8 +283,7 @@ public class Controller2D : RaycastController
         {
             above = below = false;
             left = right = false;
-            climbingSlope = false;
-            descendingSlope = false;
+            climbingSlope = descendingSlope = false;
             slidingDownMaxSlope = false;
             slopeNormal = Vector2.zero;
 

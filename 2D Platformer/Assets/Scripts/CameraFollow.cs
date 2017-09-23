@@ -26,7 +26,7 @@ public class CameraFollow : MonoBehaviour
         focusArea = new FocusArea(target.collider.bounds, focusAreaSize);
     }
 
-    void FixedUpdate()
+    void LateUpdate()
     {
         focusArea.Update(target.collider.bounds);
 

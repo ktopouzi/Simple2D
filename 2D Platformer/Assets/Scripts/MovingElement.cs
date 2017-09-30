@@ -56,11 +56,10 @@ public class MovingElement : MonoBehaviour
     {
         float currentY = transform.GetChild(0).position.y;
         float s = UnityEngine.Random.Range(0, 3);
-        print(currentY);
         int lastRight = rightIndex;
         if (randomHeight)
         {
-            layers[rightIndex].position = Vector3.right * (layers[leftIndex].position.x - backgroundSize) + new Vector3(0, UnityEngine.Random.Range(currentY, 2), 0);
+            layers[rightIndex].position = Vector3.right * (layers[leftIndex].position.x - backgroundSize) + new Vector3(0, UnityEngine.Random.Range(-4f, 2.5f), 0);
         }else
         {
             layers[rightIndex].position = Vector3.right * (layers[leftIndex].position.x - backgroundSize) + new Vector3(0, currentY, 0);
@@ -75,11 +74,10 @@ public class MovingElement : MonoBehaviour
     private void ScrollRight()
     {
         float currentY = transform.GetChild(0).position.y;
-        print(currentY);
         int lastLeft = leftIndex;
         if (randomHeight)
         {
-            layers[leftIndex].position = Vector3.right * (layers[rightIndex].position.x + backgroundSize) + new Vector3(0, UnityEngine.Random.Range(currentY, 2), 0);
+            layers[leftIndex].position = Vector3.right * (layers[rightIndex].position.x + backgroundSize) + new Vector3(0, UnityEngine.Random.Range(-4f, 2.5f), 0);
         }
         else
         {

@@ -8,10 +8,10 @@ public class MovingElement : MonoBehaviour
     public float backgroundSize;
     public float paralaxSpeed;
     public bool randomHeight;
+    public float viewZone = 60;
 
     private Transform cameraTransform;
     public Transform[] layers;
-    private float viewZone = 10;
     private int leftIndex;
     private int rightIndex;
     private float lastCameraX;
@@ -36,26 +36,18 @@ public class MovingElement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        try
-        {
+       
             if (cameraTransform.position.x < (layers[leftIndex].transform.position.x + viewZone))
                 ScrollLeft();
 
             if (cameraTransform.position.x > (layers[rightIndex].transform.position.x - viewZone))
                 ScrollRight();
-        }
-        catch (Exception e)
-        {
-
-            print(e.Data);
-        }
 
     }
 
     private void ScrollLeft()
     {
         float currentY = transform.GetChild(0).position.y;
-        float s = UnityEngine.Random.Range(0, 3);
         int lastRight = rightIndex;
         if (randomHeight)
         {

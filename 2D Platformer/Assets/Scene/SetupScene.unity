@@ -302,6 +302,7 @@ MonoBehaviour:
   materialIndex: 0
   uvAnimationRate: {x: -0.005, y: 0}
   textureName: _MainTex
+  uvOffset: {x: 0, y: 0}
   rend: {fileID: 0}
 --- !u!23 &307867983
 MeshRenderer:
@@ -717,6 +718,7 @@ MonoBehaviour:
   materialIndex: 0
   uvAnimationRate: {x: -0.016, y: 0}
   textureName: _MainTex
+  uvOffset: {x: 0, y: 0}
   rend: {fileID: 0}
 --- !u!23 &666190304
 MeshRenderer:
@@ -919,6 +921,7 @@ MonoBehaviour:
   materialIndex: 0
   uvAnimationRate: {x: -0.016, y: 0}
   textureName: _MainTex
+  uvOffset: {x: 0, y: 0}
   rend: {fileID: 0}
 --- !u!23 &705087054
 MeshRenderer:
@@ -1408,6 +1411,7 @@ MonoBehaviour:
   materialIndex: 0
   uvAnimationRate: {x: -0.005, y: 0}
   textureName: _MainTex
+  uvOffset: {x: 0, y: 0}
   rend: {fileID: 0}
 --- !u!23 &991816814
 MeshRenderer:
@@ -1830,6 +1834,7 @@ MonoBehaviour:
   materialIndex: 0
   uvAnimationRate: {x: -0.005, y: 0}
   textureName: _MainTex
+  uvOffset: {x: 0, y: 0}
   rend: {fileID: 0}
 --- !u!23 &1981891708
 MeshRenderer:
@@ -2174,6 +2179,7 @@ MonoBehaviour:
   materialIndex: 0
   uvAnimationRate: {x: -0.016, y: 0}
   textureName: _MainTex
+  uvOffset: {x: 0, y: 0}
   rend: {fileID: 0}
 --- !u!23 &2073512140
 MeshRenderer:

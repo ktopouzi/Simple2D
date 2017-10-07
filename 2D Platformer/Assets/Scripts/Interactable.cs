@@ -1,0 +1,20 @@
+﻿using UnityEngine;
+
+public class Interactable : MonoBehaviour {
+
+    public float radius = 1f;
+
+    void OnDrawGizmosSelected ()
+    {
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawSphere(transform.position, radius);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Player")
+        {
+            print("You hit the player, now if that's a power up do something, if you are an enemy show some mercy!");
+        }
+    }
+}

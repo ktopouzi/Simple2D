@@ -43,6 +43,7 @@ public class Player : MonoBehaviour
 
     void Update()
     {
+        #region Movement
         CalculateVelocity();
         HandleWallSliding();
 
@@ -59,6 +60,8 @@ public class Player : MonoBehaviour
                 velocity.y = 0;
             }
         }
+        #endregion
+
     }
 
     public void SetDirectionalInput(Vector2 input)

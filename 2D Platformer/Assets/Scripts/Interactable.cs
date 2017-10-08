@@ -4,6 +4,10 @@ public class Interactable : MonoBehaviour {
 
     public float radius = 1f;
 
+    public virtual void Interact()
+    {
+        print("interacting with"+ transform.name);
+    }
     void OnDrawGizmosSelected ()
     {
         Gizmos.color = Color.cyan;

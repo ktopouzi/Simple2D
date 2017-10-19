@@ -4,6 +4,7 @@ using System.Collections;
 [RequireComponent(typeof(Player))]
 public class PlayerInput : MonoBehaviour
 {
+    public static Vector2 directionalInput;
 
     Player player;
 
@@ -14,7 +15,7 @@ public class PlayerInput : MonoBehaviour
 
     void Update()
     {
-        Vector2 directionalInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        directionalInput = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
         player.SetDirectionalInput(directionalInput);
 
         if (Input.GetKeyDown(KeyCode.Space))

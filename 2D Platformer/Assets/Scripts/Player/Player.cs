@@ -28,7 +28,7 @@ public class Player : MonoBehaviour
 
     Controller2D controller;
 
-    Vector2 directionalInput;
+    public Vector2 directionalInput;
     bool wallSliding;
     int wallDirX;
 
@@ -67,6 +67,7 @@ public class Player : MonoBehaviour
     public void SetDirectionalInput(Vector2 input)
     {
         directionalInput = input;
+
     }
 
     public void OnJumpInputDown()

@@ -4,9 +4,8 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-
+    Transform player;
     public List<WorldObstacle> ObjectPool;
-    public 
     // Use this for initialization
     void Start()
     {

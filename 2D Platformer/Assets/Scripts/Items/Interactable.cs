@@ -9,6 +9,10 @@ public class Interactable : MonoBehaviour {
     {
         print("interacting with "+ transform.name);
     }
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
     void Update()
     {
         float distance = Vector2.Distance(player.position, transform.position);

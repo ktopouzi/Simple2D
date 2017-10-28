@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class DestructionScript : MonoBehaviour
 {
-
+    void Start()
+    {
+    }
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
@@ -12,4 +14,5 @@ public class DestructionScript : MonoBehaviour
             Debug.Break();
         }
     }
+
 }

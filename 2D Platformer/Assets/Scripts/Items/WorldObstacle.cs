@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public class WorldObstacle : Interactable
 {
-   public Type type;
+    public Type type;
 
     public override void Interact()
     {
